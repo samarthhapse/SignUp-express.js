@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    //- observe below two lines carefully to include css file in pug 
+    //- below in second line one tab before 'include' is also cumpolsary
+    style 
+     include ../static/index.css
+</head>
+<body> 
+  <div class="cont">
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About</a></li>
+      <li><a href="/">Contact</a></li>
+    </ul>
+  </nav>
+  <h1>Golden Guys Gym (G3)</h1>
+  <p>
+  | #{content}
+</p>
+<form action="/" method="post" id="contact">
+  <input type="text" name="name" id="name" placeholder="Enter your name">
+  <input type="text" name="age" id="age" placeholder="Enter your age">
+  <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+  <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+  <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you.."></textarea>
+  <button class="btn">Submit</button>
+</form>
+</div>
+</body>
+</html>
